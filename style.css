@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.accordion{
+    width: 300px;
+
+}
+
+.accordion p{
+    width:350px;
+}
+
+.accordion-item{
+    margin-bottom:5px;
+}
+
+.accordion-header{
+    background-color: black;
+    padding: 10px;
+    cursor:pointer;
+    font-weight: 400;
+    color:white;
+    width:350px;
+}
+
+.accordion-content{
+    display:none;
+    max-height: 900px;
+    transition: max-height 0.5s ease;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #1a1111;
+    color: cadetblue;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.accordion-content.active{
+    display:block;
+    max-height: 900px;
+    width: 350px;
+}
